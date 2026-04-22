@@ -1,15 +1,14 @@
 /* 
+  ***STYLESHEET FOR MAIN PAGE OF PORTFOLIO***
+  
   To Do Next:
-    Center Titles. Make all content boxes.
-    
-  For Future:
     Make headings drop-down menus, with animations that will reveal the content boxes. Also for educational institutions and out-of-school studies.
 */
 
 
 .navbar ul{
   list-style-type: none;
-  background-color: #233844;
+  background-color: #000000;
   padding: 0px;
   margin: 0px;
   overflow: hidden;
@@ -34,21 +33,19 @@
 .main_content {
   margin-left: 10px;
   margin-right: 10px;
-}
-
-body {
-    background-color: black;
-    margin: 0px;
-}
-span {
-  background-color: red;
-}
-.main_content {
   color: white;
-
   font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: 700;
+}
+
+body {
+    margin: 0px;
+    background-color: black;
+    background-image: url("../images/spaaaace.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
 }
 
 #second_project_link {
@@ -56,48 +53,73 @@ span {
 
 }
 
+/* Webpage Content */
+
 .about_me_card {
   color: black;
   border: 5px solid;
   border-radius: 30px;
   background: white;
-  width: 900px;
-  height: 500px;
+  width: 40%;
+  height: 30%;
   padding: 20px;
   margin-left: 300px;
 }
 
 #about_me_header {
   margin-top: 6px;
-  font-size: 35px;
+  font-size: 3rem;
 }
 
 #about_me_text {
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 .interests_card {
   color: black;
   border-radius: 30px;
   border: 3px solid;
+  border-color: white;
   background: white;
-  width: 900px;
-  height: 500px;
+  width: 40%;
+  height: 30%;
   padding: 20px;
   margin: 50px;
   margin-left: 899px;;
 }
 
 #interests_header {
-  font-size: 35px;
+  font-size: 3rem;
 }
 
 #interests_text {
-  font-size: 30px
+  font-size: 2rem
 }
 #title {
   display: flex;
   justify-content: center;
-  font-size: 100px;
+  font-size: 6.25rem;
 }
 
+/* Credentials Dropdown Menu */
+
+.work_experience_dropdown button {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none
+}
+
+.work_experience_dropdown .work_experience_dropdown_content {
+  display: none;
+  margin-left: 15px;
+  color: red;
+  position: absolute;
+  background-color: white;
+  min-width: 100px;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+
+.work_experience_dropdown:hover .work_experience_dropdown_content {
+  display: block;
+  
+}
