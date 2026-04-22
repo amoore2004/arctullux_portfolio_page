@@ -1,3 +1,12 @@
+/* 
+  To Do Next:
+    Center Titles. Make all content boxes.
+    
+  For Future:
+    Make headings drop-down menus, with animations that will reveal the content boxes. Also for educational institutions and out-of-school studies.
+*/
+
+
 .navbar ul{
   list-style-type: none;
   background-color: #233844;
@@ -28,14 +37,46 @@
 }
 
 body {
-  background-image: url(../images/planet.jpg)
+    background-color: black;
+    margin: 0px;
 }
-
+span {
+  background-color: red;
+}
 .main_content {
   color: white;
+
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
 }
 
 #second_project_link {
   color: #ceaef4;
 
+}
+
+#about_me {
+  border: 5px solid;
+  background: gray;
+  width: 450px;
+  height: 250px;
+  padding: 20px;
+  margin-left: 500px;
+}
+
+.interests {
+  border: 3px solid;
+  background: darkred;
+  width: 450px;
+  height: 250px;
+  padding: 20px;
+  margin: 50px;
+  margin-left: 899px;;
+
+}
+
+.title_division {
+  display: flex;
+  margin: 0 auto;
 }
