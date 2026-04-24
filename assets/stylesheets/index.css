@@ -104,22 +104,52 @@ body {
 /* Credentials Dropdown Menu */
 
 .work_experience_dropdown button {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
   padding: 10px 15px;
   cursor: pointer;
-  border: none
+  border: none;
+  background-color: white;
+  border: 5px solid;
+  border-radius: 30px;
+  
+}
+
+.work_experience_dropdown {
+  display: inline-block;
 }
 
 .work_experience_dropdown .work_experience_dropdown_content {
   display: none;
-  margin-left: 15px;
-  color: red;
-  position: absolute;
+  margin-left: 6px;
+  margin-top: 10px;
+  border: 5px solid;
+  border-radius: 25px;
+  color: black;
+  border-color: white;
   background-color: white;
+  position: absolute;
   min-width: 100px;
   box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
 }
 
+
+
 .work_experience_dropdown:hover .work_experience_dropdown_content {
   display: block;
   
+}
+
+.education_dropdown button {
+  margin-top: 30px;
+  margin-left: 6px;
+  padding: 10px 15px;
+}
+.education_content ul {
+  color: white;
+}
+
+#education_dropdown_header {
+  color: white;
 }
